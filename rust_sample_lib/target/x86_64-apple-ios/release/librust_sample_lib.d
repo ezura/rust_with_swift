@@ -1,0 +1,1 @@
+/Users/ezura/workspace/practice/rust_swift/rust_with_swift/rust_sample_lib/target/x86_64-apple-ios/release/librust_sample_lib.a: /Users/ezura/workspace/practice/rust_swift/rust_with_swift/rust_sample_lib/src/lib.rs
