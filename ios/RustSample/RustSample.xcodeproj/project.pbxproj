@@ -24,6 +24,8 @@
 		FFD6F5E423891114009E0BFC /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		FFD6F5E723891114009E0BFC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FFD6F5E923891114009E0BFC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FFD6F5F2238911EA009E0BFC /* librust_sample_lib.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = librust_sample_lib.a; path = ../../rust_sample_lib/target/universal/release/librust_sample_lib.a; sourceTree = "<group>"; };
+		FFD6F5F323891214009E0BFC /* libresolv.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libresolv.tbd; path = usr/lib/libresolv.tbd; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -42,6 +44,7 @@
 			children = (
 				FFD6F5DA23891113009E0BFC /* RustSample */,
 				FFD6F5D923891113009E0BFC /* Products */,
+				FFD6F5F1238911E9009E0BFC /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -73,6 +76,15 @@
 				FFD6F5E423891114009E0BFC /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		FFD6F5F1238911E9009E0BFC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FFD6F5F323891214009E0BFC /* libresolv.tbd */,
+				FFD6F5F2238911EA009E0BFC /* librust_sample_lib.a */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
