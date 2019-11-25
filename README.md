@@ -74,6 +74,25 @@ const char* rust_greeting(const char* to);
 void rust_greeting_free(char *);
 ```
 
+iOS app project 作る
+
+Rust で作った library を link する  
+~libresolv.tbd も追加する~  <- TODO: 何用？？？調べる  
+
+bridging header つくる  
+
+.h ファイルないんだけど、どうするんだ…  
+-> cbindgen 使って生成すれば良さそう https://github.com/eqrion/cbindgen  
+header file import する  
+.a ファイルを target に含める  
+動いた
+
+途中から説明通りにやっても動かなくて苦しい戦いになった
+
+cdylib <- C dynamic library? かな。TODO: 種類の意味調べる
+
 ## References
 ### Getting started
 * [Building and Deploying a Rust library on iOS](https://mozilla.github.io/firefox-browser-architecture/experiments/2017-09-06-rust-on-ios.html)
+* [cargo-lipo](https://github.com/TimNN/cargo-lipo)
+* [Rust on iOS](https://medium.com/visly/rust-on-ios-39f799b3c1dd)
